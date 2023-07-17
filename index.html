@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manish | Portfolio </title>
+    <!-- <link rel="icon" type="image/x-icon" href="#"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        #nav-menu {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+
+        #nav-menu>.nav-link {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* -------------------  */
+        #home {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            place-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        #home>.home-content {
+            line-height: 50px;
+            font-size: 35px;
+            padding: 5px;
+        }
+
+        .home-icon a {
+            font-size: 20px;
+            color: rgb(41, 8, 8);
+
+        }
+
+        .home-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        #about {
+            height: 100vh;
+            place-items: center;
+            padding: 50px;
+        }
+
+        #about>h2 {
+            height: 40px;
+        }
+        #skills {
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .skills-card {
+            display: grid;
+            place-items: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .skills-card-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            zoom: 1.1;
+            object-fit: fill;
+        }
+
+        #projects {
+            display: grid;
+            place-items: center;
+            padding: 50px;
+        }
+
+        .project-card {
+            display: grid;
+            place-items: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #contact {
+            display: grid;
+            place-items: center;
+            padding: 50px;
+        }
+
+        #resume {
+            display: grid;
+            place-items: center;
+            padding: 50px;
+        }
+
+        #resume-button-1,
+        #resume-link-1 {
+            margin: 10px;
+        }
+
+        /* ------------------  */
+        .material-symbols-outlined {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #nav-menu {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .nav-link {
+                display: none;
+            }
+
+            .material-symbols-outlined {
+                display: inline;
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 48
+            }
+
+            #home {
+                flex-direction: column;
+            }
+
+            .home-content .home-txt {
+                text-align: center;
+            }
+
+            #skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            #projects {
+                grid-template-columns: 1fr;
+            }
+
+
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            #nav-menu {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .nav-link {
+                display: none;
+            }
+
+            .material-symbols-outlined {
+                display: inline;
+                font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 48
+            }
+
+            #home {
+                width: 100%;
+            }
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="nav-menu">
+        <a class="nav-link home" href="#home">Home</a>
+        <a class="nav-link about" href="#about">About</a>
+        <a class="nav-link skills" href="#skills">Skills</a>
+        <a class="nav-link projects" href="#projects">Projects</a>
+        <a class="nav-link contact" href="#contact">Contact</a>
+        <a class="nav-link resume" href="./Manish_Gupt_Resume.pdf" target="_blank">Resume</a>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </nav>
+
+    <!-- Home  -->
+    <section id="home">
+        <img class="home-img" src="./images/dp.jpg" alt=" Photo">
+        <div class="home-content">
+            <div class="home-txt">Hello, I'm a</div>
+            <div class="home-txt">Java Developer</div>
+            <div class="home-icon">
+                <a href="./Manish_Gupt_Resume.pdf" target="_blank">Resume &#128279;</a>
+                <a href="https://github.com/ManishGupt5">GitHub &#128279;</a>
+                <a href="https://linkedin.com/in/ManishGupt5">LinkedIn &#128279;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About  -->
+    <section id="about" class="about section">
+
+        <h2 id="user-detail-name">Manish Kumar Gupt</h2>
+        <p id="user-detail-intro">Hello, my name is Manish Kumar Gupta. I am an aspiring Java backend developer with a
+            strong passion for collaborative work and building real-time projects. With a dedication to excellence and a
+            drive to constantly improve, I strive to deliver high-quality solutions in all my endeavors. I have a keen
+            interest in problem-solving and enjoy working in a team to create innovative and efficient solutions. Feel
+            free to explore my portfolio and get in touch to discuss potential collaborations.</p>
+    </section>
+
+    <!-- Skills  -->
+    <section id="skills">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/html.png" alt="Skill Image">
+            <h3 class="skills-card-name">Html</h3>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/css.png" alt="Skill Image">
+            <h3 class="skills-card-name">CSS</h3>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/javascript.png" alt="Skill Image">
+            <h3 class="skills-card-name">JavaScript</h3>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./dp.jpg" alt="Skill Image">
+            <h3 class="skills-card-name">Java</h3>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./dp.jpg" alt="Skill Image">
+            <h3 class="skills-card-name">MySQL</h3>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./dp.jpg" alt="Skill Image">
+            <h3 class="skills-card-name">GitHub</h3>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="project-card">
+            <img src="#" alt="Project Image">
+            <h3 class="project-title">Zomaato</h3>
+            <p class="project-description">Project description goes here.</p>
+            <p class="project-tech-stack">Tech stack used: HTML, CSS, JavaScript</p>
+            <a class="project-github-link" href="#">GitHub Repository</a>
+            <a class="project-deployed-link" href="#">Deployed Link</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <a id="contact-github" href="https://github.com/ManishGupt5">GitHub</a>
+        <a id="contact-linkedin" href="https://linkedin.com/in/ManishGupt5">LinkedIn</a>
+        <p id="contact-phone">Phone: +91 8808901250</p>
+        <p id="contact-email">Email: Manishgupt0000@gmail.com</p>
+
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <button id="resume-button-1" onclick="window.open('./Manish_Gupt_Resume.pdf')">View Resume</button>
+        <a id="resume-link-1" href="./Manish_Gupt_Resume.pdf" target="_blank" download>Download Resume</a>
+    </section>
+
+</body>
+<script>
+    let navMenu = document.querySelector(".material-symbols-outlined");
+    let navLink = document.querySelectorAll(".nav-link");
+
+    navMenu.addEventListener("click", () => {
+        if (document.querySelector(".nav-link").style.display !== "none") {
+            navLink.forEach((e) => { e.style.display = "none" })
+        } else {
+            navLink.forEach((e) => { e.style.display = "inline" })
+        }
+    });
+
+</script>
+
+</html>
