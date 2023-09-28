@@ -6,16 +6,17 @@
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #fff;
+    background-color: #e9eae4;
+    color: black;
 }
 
 .nav-links a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .menu li:hover {
-    background-color: #e9eae4;
+    border: 1px solid grey;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -55,7 +56,7 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: grey;
+        background-color: #e9eae4;
         right: 0;
         left: 0;
         text-align: center;
@@ -86,10 +87,10 @@ input[type=checkbox] {
     width: 80%;
     margin: auto;
     display: flex;
+    padding: 20px;
     flex-direction: row;
     justify-content: space-around;
     place-items: center;
-    height: 100vh;
     background-color: #f9f9f9;
 }
 
@@ -99,16 +100,26 @@ input[type=checkbox] {
     padding: 5px;
 }
 
+
+
 .home-icon a {
     font-size: 20px;
+    padding-right: 5px;
     color: rgb(41, 8, 8);
-
 }
 
 .home-img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
+}
+
+.home-icon {
+    display: flex;
+}
+
+.home-icon div {
+    align-items: center;
 }
 
 #about {
@@ -125,22 +136,23 @@ input[type=checkbox] {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 2%;
+    padding: 2%;
     margin: auto;
 }
 
 .skills-card {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #f9f9f9;
-    padding: 20px;
     text-align: center;
 }
 
 .skills-card-img {
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    /* height: 150px; */
     border-radius: 50%;
     zoom: 1.1;
     object-fit: fill;
@@ -168,6 +180,7 @@ input[type=checkbox] {
     padding: 50px;
 }
 
+
 #resume {
     display: grid;
     place-items: center;
@@ -185,9 +198,23 @@ input[type=checkbox] {
         flex-direction: column;
     }
 
-    .home-content .home-txt {
-        text-align: center;
+    #home img {
+        width: 70%;
     }
+
+    .home-txt,
+    .home-icon {
+        text-align: center;
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+
+    .home-icon a {
+        line-height: 16px;
+        font-size: 16px;
+    }
+
 
     #skills {
         grid-template-columns: repeat(2, 1fr);
@@ -202,7 +229,9 @@ input[type=checkbox] {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     #home {
+        margin-top: auto;
         width: 100%;
     }
+
 
 }

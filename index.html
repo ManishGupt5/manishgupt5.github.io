@@ -14,18 +14,6 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <!-- <nav id="nav-menu">
-        <a class="nav-link home" href="#home">Home</a>
-        <a class="nav-link about" href="#about">About</a>
-        <a class="nav-link skills" href="#skills">Skills</a>
-        <a class="nav-link projects" href="#projects">Projects</a>
-        <a class="nav-link contact" href="#contact">Contact</a>
-        <a class="nav-link resume" href="./Manish_Gupt_Resume.pdf" target="_blank">Resume</a>
-        <span class="material-symbols-outlined">
-            menu
-        </span>
-    </nav> -->
 
     <nav id="nav-menu" class="navbar">
         <div class="logo">Manish</div>
@@ -51,16 +39,16 @@
             <div class="home-txt">Hello, I'm a</div>
             <div class="home-txt">Java Developer</div>
             <div class="home-icon">
-                <a href="./Manish_Gupt_Resume.pdf" target="_blank">Resume
-                    <span class="material-icons">
-                        arrow_outward
-                    </span></a>
-                <a href="https://github.com/ManishGupt5">GitHub <span class="material-icons">
-                        arrow_outward
-                    </span></a>
-                <a href="https://linkedin.com/in/ManishGupt5">LinkedIn <span class="material-icons">
-                        arrow_outward
-                    </span></a>
+                <div><a id="resume-button-2" href="./Manish_Gupt_Resume.pdf" target="_blank">Resume
+                        <span class="material-icons">
+                            arrow_outward
+                        </span></a></div>
+                <div><a href="https://github.com/ManishGupt5">GitHub <span class="material-icons">
+                            arrow_outward
+                        </span></a></div>
+                <div><a href="https://linkedin.com/in/ManishGupt5">LinkedIn <span class="material-icons">
+                            arrow_outward
+                        </span></a></div>
             </div>
         </div>
     </section>
@@ -74,6 +62,8 @@
             drive to constantly improve, I strive to deliver high-quality solutions in all my endeavors. I have a keen
             interest in problem-solving and enjoy working in a team to create innovative and efficient solutions. Feel
             free to explore my portfolio and get in touch to discuss potential collaborations.</p>
+
+
     </section>
 
     <!-- Skills  -->
@@ -122,7 +112,6 @@
         <a id="contact-linkedin" href="https://linkedin.com/in/ManishGupt5">LinkedIn</a>
         <p id="contact-phone">Phone: +91 8808901250</p>
         <p id="contact-email">Email: Manishgupt0000@gmail.com</p>
-
     </section>
 
     <!-- Resume -->
@@ -131,22 +120,22 @@
             <span class="material-icons">
                 touch_app
             </span></button>
-        <a id="resume-link-1" href="./Manish_Gupt_Resume.pdf" target="_blank" download>Download Resume</a>
+        <a resume-link-1 href="./Manish_Gupt_Resume.pdf" target="_blank" download>Download Resume</a>
     </section>
 
 </body>
-<!-- <script>
-    let navMenu = document.querySelector(".material-symbols-outlined");
-    let navLink = document.querySelectorAll(".nav-link");
+<script>
+    let checkbox = document.getElementById('checkbox_toggle');
+    let home = document.getElementById('home');
 
-    navMenu.addEventListener("click", () => {
-        if (document.querySelector(".nav-link").style.display !== "none") {
-            navLink.forEach((e) => { e.style.display = "none" })
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            home.style.marginTop = '300px';
         } else {
-            navLink.forEach((e) => { e.style.display = "inline" })
+            home.style.marginTop = '0';
         }
     });
 
-</script> -->
+</script>
 
 </html>
