@@ -5,18 +5,80 @@
     text-decoration: none;
 }
 
-#nav-menu {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    background-color: #f5f5f5;
-    padding: 10px;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #fff;
 }
 
-#nav-menu>.nav-link {
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    text-align: center;
-    padding: 10px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #e9eae4;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px 14px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 770px) {
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: grey;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #e9eae4;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 /* -------------------  */
@@ -117,29 +179,8 @@
     margin: 10px;
 }
 
-/* ------------------  */
-.material-symbols-outlined {
-    display: none;
-}
 
 @media screen and (max-width: 768px) {
-    #nav-menu {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .nav-link {
-        display: none;
-    }
-
-    .material-symbols-outlined {
-        display: inline;
-        font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 48
-    }
-
     #home {
         flex-direction: column;
     }
@@ -157,27 +198,9 @@
     }
 
 
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    #nav-menu {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .nav-link {
-        display: none;
-    }
-
-    .material-symbols-outlined {
-        display: inline;
-        font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 48
-    }
-
     #home {
         width: 100%;
     }
