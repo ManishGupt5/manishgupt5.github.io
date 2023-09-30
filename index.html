@@ -1,134 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <title>Manish | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
-    <title> Manish | Portfolio </title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
+  <body>
     <nav id="nav-menu" class="navbar">
-        <div class="logo">Manish</div>
+      <div class="logo">Manish</div>
 
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <li><a class="nav-link home" href="#home">Home</a></li>
-                <li><a class="nav-link about" href="#about">About</a> </li>
-                <li><a class="nav-link skills" href="#skills">Skills</a></li>
-                <li><a class="nav-link projects" href="#projects">Projects</a></li>
-                <li><a class="nav-link contact" href="#contact">Contact</a></li>
-                <li><a class="nav-link resume" href="./Manish_Gupt_Resume.pdf" target="_blank">Resume</a></li>
-            </div>
-        </ul>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a class="nav-link home" href="#home">Home</a></li>
+          <li><a class="nav-link about" href="#about">About</a></li>
+          <li><a class="nav-link skills" href="#skills">Skills</a></li>
+          <li><a class="nav-link projects" href="#projects">Projects</a></li>
+          <li><a class="nav-link contact" href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="nav-link resume"
+              href="./Manish_Gupt_Resume.pdf"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </div>
+      </ul>
     </nav>
 
     <!-- Home  -->
     <section id="home">
-        <img class="home-img" src="./images/Dp.png" alt=" Photo">
-        <div class="home-content">
-            <div class="home-txt">Hello, I'm a</div>
-            <div class="home-txt">Java Developer</div>
-            <div class="home-icon">
-                <div><a id="resume-button-2" href="./Manish_Gupt_Resume.pdf" target="_blank">Resume </a></div>
-                <div><a href="https://github.com/ManishGupt5">GitHub </a></div>
-                <div><a href="https://linkedin.com/in/ManishGupt5">LinkedIn </a></div>
-            </div>
+      <img class="home-img" src="./images/Dp.png" alt=" Photo" />
+      <div class="home-content">
+        <div class="home-txt">Hello, I'm a</div>
+        <div class="home-txt">Java Developer</div>
+        <div class="home-icon">
+          <div>
+            <a
+              id="resume-button-2"
+              href="./Manish_Gupt_Resume.pdf"
+              target="_blank"
+              >Resume
+            </a>
+          </div>
+          <div><a href="https://github.com/ManishGupt5">GitHub </a></div>
+          <div><a href="https://linkedin.com/in/ManishGupt5">LinkedIn </a></div>
         </div>
+      </div>
     </section>
 
     <!-- About  -->
     <section id="about" class="about section">
-
-        <h2 id="user-detail-name">Manish Kumar Gupt</h2>
-        <p id="user-detail-intro">Hello, my name is Manish Kumar Gupta. I am an aspiring Java backend developer with a
-            strong passion for collaborative work and building real-time projects. With a dedication to excellence and a
-            drive to constantly improve, I strive to deliver high-quality solutions in all my endeavors. I have a keen
-            interest in problem-solving and enjoy working in a team to create innovative and efficient solutions. Feel
-            free to explore my portfolio and get in touch to discuss potential collaborations.</p>
-        
+      <h2 id="user-detail-name">Manish Kumar Gupt</h2>
+      <p id="user-detail-intro">
+        Hello, my name is Manish Kumar Gupta. I am an aspiring Java backend
+        developer with a strong passion for collaborative work and building
+        real-time projects. With a dedication to excellence and a drive to
+        constantly improve, I strive to deliver high-quality solutions in all my
+        endeavors. I have a keen interest in problem-solving and enjoy working
+        in a team to create innovative and efficient solutions. Feel free to
+        explore my portfolio and get in touch to discuss potential
+        collaborations.
+      </p>
     </section>
 
     <!-- Skills  -->
     <section id="skills">
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/html.png" alt="Skill Image">
-            <h3 class="skills-card-name">Html</h3>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/css.png" alt="Skill Image">
-            <h3 class="skills-card-name">CSS</h3>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/javascript.png" alt="Skill Image">
-            <h3 class="skills-card-name">JavaScript</h3>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="/images/java logo.png" alt="java Image">
-            <h3 class="skills-card-name">Java</h3>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="/images/mysql.png" alt="mysql Image">
-            <h3 class="skills-card-name">MySQL</h3>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="/images/github.png" alt="git Image">
-            <h3 class="skills-card-name">GitHub</h3>
-        </div>
+      <div class="skills-card">
+        <img
+          class="skills-card-img"
+          src="./images/html.png"
+          alt="Skill Image"
+        />
+        <h3 class="skills-card-name">Html</h3>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./images/css.png" alt="Skill Image" />
+        <h3 class="skills-card-name">CSS</h3>
+      </div>
+      <div class="skills-card">
+        <img
+          class="skills-card-img"
+          src="./images/javascript.png"
+          alt="Skill Image"
+        />
+        <h3 class="skills-card-name">JavaScript</h3>
+      </div>
+      <div class="skills-card">
+        <img
+          class="skills-card-img"
+          src="/images/java logo.png"
+          alt="java Image"
+        />
+        <h3 class="skills-card-name">Java</h3>
+      </div>
+      <div class="skills-card">
+        <img
+          class="skills-card-img"
+          src="/images/mysql.png"
+          alt="mysql Image"
+        />
+        <h3 class="skills-card-name">MySQL</h3>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="/images/github.png" alt="git Image" />
+        <h3 class="skills-card-name">GitHub</h3>
+      </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-        <div class="project-card">
-            <img src="#" alt="Project Image">
-            <h3 class="project-title">Zomaato</h3>
-            <p class="project-description">Project description goes here.</p>
-            <p class="project-tech-stack">Tech stack used: HTML, CSS, JavaScript</p>
-            <a class="project-github-link" href="#">GitHub Repository</a>
-            <a class="project-deployed-link" href="#">Deployed Link</a>
-        </div>
+      <div class="project-card">
+        <img src="#" alt="Project Image" />
+        <h3 class="project-title">Zomaato</h3>
+        <p class="project-description">Project description goes here.</p>
+        <p class="project-tech-stack">Tech stack used: HTML, CSS, JavaScript</p>
+        <a class="project-github-link" href="#">GitHub Repository</a>
+        <a class="project-deployed-link" href="#">Deployed Link</a>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <a id="contact-github" href="https://github.com/ManishGupt5">GitHub</a>
-        <a id="contact-linkedin" href="https://linkedin.com/in/ManishGupt5"> LinkedIn</a>
-        <p id="contact-phone">Phone: +91 8808901250</p>
-        <p id="contact-email">Email: Manishgupt0000@gmail.com</p>
+      <a id="contact-github" href="https://github.com/ManishGupt5">GitHub</a>
+      <a id="contact-linkedin" href="https://linkedin.com/in/ManishGupt5">
+        LinkedIn</a
+      >
+      <p id="contact-phone">Phone: +91 8808901250</p>
+      <p id="contact-email">Email: Manishgupt0000@gmail.com</p>
     </section>
-
 
     <!-- Resume -->
     <section id="resume">
-        <button id="resume-button-1" onclick="window.open('./Manish_Gupt_Resume.pdf')">View Resume
-            <span class="material-icons">
-                touch_app
-            </span></button>
-        <a resume-link-1 href="./Manish_Gupt_Resume.pdf" target="_blank" download>Download Resume</a>
+      <button
+        id="resume-button-1"
+        onclick="window.open('./Manish_Gupt_Resume.pdf')"
+      >
+        View Resume <span class="material-icons"> touch_app </span>
+      </button>
+      <a resume-link-1 href="./Manish_Gupt_Resume.pdf" target="_blank" download
+        >Download Resume</a
+      >
     </section>
+  </body>
+  <script>
+    let checkbox = document.getElementById("checkbox_toggle");
+    let home = document.getElementById("home");
 
-</body>
-<script>
-    let checkbox = document.getElementById('checkbox_toggle');
-    let home = document.getElementById('home');
-
-    checkbox.addEventListener('change', function () {
-        if (checkbox.checked) {
-            home.style.marginTop = '300px';
-        } else {
-            home.style.marginTop = '0';
-        }
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        home.style.marginTop = "300px";
+      } else {
+        home.style.marginTop = "0";
+      }
     });
-
-</script>
-
+  </script>
 </html>
