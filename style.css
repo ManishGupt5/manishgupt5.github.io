@@ -3,7 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu;
 }
+
 
 .navbar {
     width: 100%;
@@ -11,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+
     background-color: #e9eae4;
     color: black;
 }
@@ -65,7 +69,7 @@ input[type=checkbox] {
 
     .menu li:hover {
         display: inline-block;
-        background-color: #e9eae4;
+        background-color: #dcddd7;
         transition: 0.3s ease;
     }
 
@@ -91,7 +95,8 @@ input[type=checkbox] {
     flex-direction: row;
     justify-content: space-around;
     place-items: center;
-    background-color: #f9f9f9;
+    background-color: #f9f9f7;
+
 }
 
 #home>.home-content {
@@ -160,14 +165,30 @@ input[type=checkbox] {
 
 #projects {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    padding: 50px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    gap: 16px;
+}
+
+.depolyed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#projects img {
+    width: 100%;
+    height: 100px;
 }
 
 .project-card {
-    width: 95%;
     display: grid;
     place-items: center;
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     text-align: center;
@@ -177,21 +198,22 @@ input[type=checkbox] {
 #contact {
     display: grid;
     place-items: center;
-    padding: 50px;
+    box-sizing: border-box;
 }
 
-
-#resume {
-    display: grid;
-    place-items: center;
-    padding: 50px;
+.react-activity-calendar {
+    width: 80%;
+    margin: auto;
 }
 
-#resume-button-1,
-#resume-link-1 {
-    margin: 10px;
+.react-activity-calendar img {
+    max-width: 400px;
+    width: 100%;
+    height: 60vh;
+    max-width: 400px;
+    max-height: 250px;
+    margin-left: auto;
 }
-
 
 @media screen and (max-width: 768px) {
     #home {
@@ -217,6 +239,7 @@ input[type=checkbox] {
 
 
     #skills {
+        width: 90%;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -224,6 +247,9 @@ input[type=checkbox] {
         grid-template-columns: 1fr;
     }
 
+    .depolyed {
+        flex-direction: column;
+    }
 
 }
 
@@ -233,5 +259,8 @@ input[type=checkbox] {
         width: 100%;
     }
 
+    .depolyed {
+        flex-direction: column;
+    }
 
 }
