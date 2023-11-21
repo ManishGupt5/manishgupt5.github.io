@@ -116,6 +116,13 @@ input[type="checkbox"] {
 #about > p {
   line-height: 30px;
 }
+#resume-link-1{
+   border : 1px solid black;
+  border-radius:8px;
+  font-size: 20px;
+  padding: 8px;
+  color: rgb(41, 8, 8);
+}
 
 /* Skill section style */
 #skills {
