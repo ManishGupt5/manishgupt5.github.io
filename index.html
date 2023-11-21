@@ -28,7 +28,11 @@
         <li>
           <!-- "https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download" -->
           <a id="resume-button-1" class="nav-link resume"
-            href="https://drive.google.com/uc?export=download&id=1P37H0fd1vbA5nHkHqES7-eoGh7gaUpjO">Resume</a>
+            href="javascript:void(0);" onclick="downloadAndOpen()">Resume</a>
+
+<!--  <a id="resume-button-1" class="nav-link resume" onclick="window.open('./Manish_Gupt_Resume.pdf')">
+                    View Resume <span class="material-icons"> touch_app </span>
+                </a> -->
         </li>
       </div>
     </ul>
@@ -43,7 +47,7 @@
       <div class="home-icon">
         <div>
           <a id="resume-button-2"
-            href="https://drive.google.com/uc?export=download&id=1P37H0fd1vbA5nHkHqES7-eoGh7gaUpjO">Resume
+            href="javascript:void(0);" onclick="downloadAndOpen()">Resume
           </a>
         </div>
         <div><a href="https://github.com/ManishGupt5">GitHub </a></div>
@@ -71,12 +75,11 @@
       solutions. Feel free to explore my portfolio and get in touch to discuss
       potential collaborations.
     </p>
+<!--     <a id="resume-link-1"
+      href="https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download">Download Resume </a> -->
+    
     <a id="resume-link-1"
-      href="https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download">Download Resume  &#x2B73;</a>
-              <!-- <a id="resume-button" onclick="window.open('./Manish_Gupt_Resume.pdf')">
-                    View Resume <span class="material-icons"> touch_app </span>
-                </a> -->
-
+      href="javascript:void(0);" onclick="downloadAndOpen()">Download Resume </a>
   </section>
 
   <!-- Skills  -->
@@ -231,6 +234,23 @@
       }
     });
   });
+  
+  function downloadAndOpen() {
+  const resumeURL =
+    "https://drive.google.com/file/d/1P37H0fd1vbA5nHkHqES7-eoGh7gaUpjO/view?usp=drive_link";
+  const downloadURL =
+    "https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download";
+    
+  window.open(resumeURL, "_blank");
+
+  const link = document.createElement("a");
+  link.href = downloadURL;
+  link.download = "https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+  
 </script>
 
 </html>
