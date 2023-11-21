@@ -279,6 +279,9 @@ input[type="checkbox"] {
     text-align: center;
     font-size: 20px;
   }
+   #home img {
+    width: 70%;
+  }
 
   .home-icon a {
     line-height: 16px;
