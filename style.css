@@ -83,8 +83,10 @@ input[type="checkbox"] {
 }
 
 .home-icon a {
+  border : 1px solid black;
+  border-radius:8px;
   font-size: 20px;
-  padding-right: 5px;
+  padding: 8px;
   color: rgb(41, 8, 8);
 }
 
