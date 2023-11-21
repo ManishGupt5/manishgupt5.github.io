@@ -1,7 +1,6 @@
 * {
   margin: 0%;
   padding: 0%;
-  /* line-height: 30px; */
   box-sizing: border-box;
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -73,6 +72,10 @@ input[type="checkbox"] {
 
 .home-icon {
   display: flex;
+  gap: 10px;
+  width: max-content;
+  justify-content: center;
+  width: 100%;
 }
 
 .home-icon div {
@@ -89,12 +92,7 @@ input[type="checkbox"] {
   line-height: 50px;
   font-size: 35px;
   padding: 5px;
-}
-
-.home-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
+  text-align: center;
 }
 
 /* About section style */
@@ -182,7 +180,7 @@ input[type="checkbox"] {
   place-items: center;
   box-sizing: border-box;
   line-height: 30px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .react-activity-calendar {
@@ -197,6 +195,25 @@ input[type="checkbox"] {
   max-width: 400px;
   max-height: 250px;
   margin-left: auto;
+}
+
+
+.home-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.heading {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading span {
+  color: rgb(2, 166, 70);
 }
 
 /* media queries for mobile devices */
