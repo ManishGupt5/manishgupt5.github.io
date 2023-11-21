@@ -274,10 +274,6 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 
-  #home img {
-    width: 70%;
-  }
-
   .home-txt,
   .home-icon {
     text-align: center;
