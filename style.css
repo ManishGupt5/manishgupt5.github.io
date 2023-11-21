@@ -88,7 +88,8 @@ input[type="checkbox"] {
   color: rgb(41, 8, 8);
 }
 
-#home > .home-content {
+#home  .home-content {
+  width: max-content;
   line-height: 50px;
   font-size: 35px;
   padding: 5px;
@@ -250,6 +251,23 @@ input[type="checkbox"] {
   }
 }
 
+.home-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.heading {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+.heading span {
+  color: rgb(2, 166, 70);
+}
 /* media queries for desktops and laptops devices */
 @media screen and (max-width: 768px) {
   #home {
@@ -264,7 +282,6 @@ input[type="checkbox"] {
   .home-icon {
     text-align: center;
     font-size: 20px;
-    flex-direction: column;
   }
 
   .home-icon a {
